@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Bibito</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="syntax_error">Syntax Error</string>
+    <string name="cancel">Cancel</string>
+    <string name="database_load">Loading Database</string>
+    <string name="wait_title">Please wait..</string>
+    <string name="catolog_update_message">Updating bus stop catalog…</string>
+    <string name="database_query_button">Query Database</string>
+    <string name="database_update_button">Update Database</string>
+    <string name="update_db">Update Database</string>
+    <string name="bus_stop_get">Get Bus Stops</string>
+    <string name="stops_order_text">Order stops</string>
+	<string name="title_activity_list">ListActivity</string>
+    <string name="lines_showing">Lines:</string>
+</resources>
