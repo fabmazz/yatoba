@@ -1,32 +1,38 @@
 buildscript {
     repositories {
         jcenter()
+        google()
+
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.0.0'
+        classpath 'com.android.tools.build:gradle:3.1.0'
+    }
+    ext {
+        support_ver = "25.4.0"
     }
 }
 apply plugin: 'com.android.application'
 
 repositories {
     jcenter()
+    google()
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 25
+    buildToolsVersion "27.0.3"
 
     defaultConfig {
         applicationId "org.frazzmark.yatoba.app"
         minSdkVersion 9
-        targetSdkVersion 23
+        targetSdkVersion 25
         versionCode 1
         versionName "0.1"
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
     }
     buildTypes {
         release {
@@ -38,8 +44,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.0.1'
-    compile 'com.android.support:cardview-v7:23.0.1'
-    compile 'com.android.support:recyclerview-v7:23.0.1'
-    compile 'org.jsoup:jsoup:1.8.3'
+    compile "com.android.support:appcompat-v7:$support_ver"
+    compile "com.android.support:cardview-v7:$support_ver"
+    compile "com.android.support:recyclerview-v7:$support_ver"
+    compile "org.jsoup:jsoup:1.8.3"
 }
